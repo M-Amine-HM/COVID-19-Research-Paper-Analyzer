@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+scikit-learn
+spacy
+gensim
+nltk
+joblib
