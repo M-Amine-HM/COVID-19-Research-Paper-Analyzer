@@ -22,7 +22,44 @@ models/
   rf_model.joblib
   tfidf_vectorizer.joblib
   word2vec_model.gensim
+notebook/
+  covid19_projectByAmineHM.ipynb
+docs/
+  COVID-19 Research Paper Analyzer Report by AmineHM.pdf
+  COVID_NLP_Presentation AmineHM.pptx
+media/
+  demo.mp4
 ```
+
+## Visual Layout
+
+```mermaid
+flowchart TB
+  root[COVID-19 Research Paper Analyzer]
+  root --> backend[backend/]
+  root --> frontend[frontend/]
+  root --> models[models/]
+  root --> notebook[notebook/]
+  root --> docs[docs/]
+  root --> media[media/demo.mp4]
+
+  backend --> api[FastAPI /api/analyze]
+  frontend --> ui[React + Vite + Tailwind UI]
+  models --> rf[Random Forest]
+  models --> tfidf[TF-IDF Vectorizer]
+  models --> w2v[Word2Vec]
+  docs --> report[PDF report]
+  docs --> ppt[PowerPoint presentation]
+  notebook --> ipynb[Research notebook]
+```
+
+## Demo Video
+
+If your Markdown viewer supports HTML video, you can preview the demo directly here:
+
+<video controls width="100%" src="media/demo.mp4"></video>
+
+If the embedded player does not render, open [media/demo.mp4](media/demo.mp4) directly.
 
 ## Backend (FastAPI)
 
@@ -64,6 +101,9 @@ The Vite dev server proxies `/api` to `http://localhost:8000`.
 
 ## Notes
 
-- Place the trained models in `models/` at the project root.
-- If you plan to share the repo, store models in a separate download location (cloud storage or release assets) and document the link here.
+- Keep the trained models in `models/` at the project root for local use.
+- The demo video is stored at `media/demo.mp4`.
+- The report and presentation live in `docs/`.
+- The research notebook lives in `notebook/`.
+- If you plan to share the repo, store large artifacts in a separate download location (cloud storage or release assets) and document the link here.
 - NLTK downloads required data on first startup.
