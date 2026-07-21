@@ -4,7 +4,7 @@ Full-stack web app for classifying COVID-19 paper abstracts, extracting entities
 
 ## Screenshots
 ### Results View
-![Classification results and keyword suggestions](media\screenshots\biomedicalanalyser1.png)
+![Classification results and keyword suggestions](media/screenshots/biomedicalanalyser1.png)
 > *Classified topic, extracted entities, and related keyword recommendations.*
 ## Demo Video
 
