@@ -2,6 +2,19 @@
 
 Full-stack web app for classifying COVID-19 paper abstracts, extracting entities, and suggesting related keywords.
 
+## Screenshots
+### Results View
+![Classification results and keyword suggestions](media\screenshots\biomedicalanalyser1.png)
+> *Classified topic, extracted entities, and related keyword recommendations.*
+## Demo Video
+
+If your Markdown viewer supports HTML video, you can preview the demo directly here:
+
+<video controls width="100%" src="media/demo.mp4"></video>
+
+If the embedded player does not render, open [media/demo.mp4](media/demo.mp4) directly.
+
+
 ## Project Structure
 
 ```
@@ -52,14 +65,6 @@ flowchart TB
   docs --> ppt[PowerPoint presentation]
   notebook --> ipynb[Research notebook]
 ```
-
-## Demo Video
-
-If your Markdown viewer supports HTML video, you can preview the demo directly here:
-
-<video controls width="100%" src="media/demo.mp4"></video>
-
-If the embedded player does not render, open [media/demo.mp4](media/demo.mp4) directly.
 
 ## Backend (FastAPI)
 
